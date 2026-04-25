@@ -347,44 +347,6 @@ Timeline:
 ...continues until no bids in trigger window or forced close time reached
 ```
 
-## 🚢 Deployment
-
-### Frontend (Vercel/Netlify)
-
-1. Build the frontend:
-```bash
-cd frontend
-npm run build
-```
-
-2. Deploy the `dist` folder to Vercel or Netlify
-
-3. Update environment variables with production backend URL
-
-### Backend (Render/Railway)
-
-1. Push code to GitHub repository
-
-2. Connect repository to Render/Railway
-
-3. Set environment variables:
-   - PORT
-   - MONGO_URI
-   - JWT_SECRET
-   - NODE_ENV=production
-
-4. Deploy and note the backend URL
-
-5. Update frontend axios configuration with backend URL
-
-### Database (MongoDB Atlas)
-
-1. Create MongoDB Atlas account
-2. Create a cluster
-3. Create database user
-4. Whitelist IP addresses (0.0.0.0/0 for all)
-5. Get connection string and add to backend .env
-
 ## 📝 Project Structure
 
 ```
