@@ -15,7 +15,7 @@ const verifyToken = async (req, res, next) => {
         next()
     }
     catch (error) {
-        console.log("Error in verify Token backend")
+        console.log("Error in verify Token backend", error)
         return res.status(500).json({ "message": "Internal Server Error" })
     }
 }
