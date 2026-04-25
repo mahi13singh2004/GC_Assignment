@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useAuthStore } from './store/auth.store.js'
+import LoadingPage from './pages/LoadingPage.jsx'
 import Login from './pages/Login.jsx'
 import Signup from './pages/Signup.jsx'
 import Dashboard from './pages/Dashboard.jsx'
@@ -17,14 +18,15 @@ const App = () => {
   }, [])
 
   return (
-      <Routes>
-        <Route path="/login" element={<RedirectRoute><Login /></RedirectRoute>} />
-        <Route path="/signup" element={<RedirectRoute><Signup /></RedirectRoute>} />
-        <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-        <Route path="/create-rfq" element={<ProtectedRoute><CreateRfq /></ProtectedRoute>} />
-        <Route path="/rfq/:id" element={<ProtectedRoute><RfqDetails /></ProtectedRoute>} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
+    <Routes>
+      <Route path="/loading" element={<LoadingPage />} />
+      <Route path="/login" element={<RedirectRoute><Login /></RedirectRoute>} />
+      <Route path="/signup" element={<RedirectRoute><Signup /></RedirectRoute>} />
+      <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+      <Route path="/create-rfq" element={<ProtectedRoute><CreateRfq /></ProtectedRoute>} />
+      <Route path="/rfq/:id" element={<ProtectedRoute><RfqDetails /></ProtectedRoute>} />
+      <Route path="*" element={<Navigate to="/loading" />} />
+    </Routes>
   )
 }
 
