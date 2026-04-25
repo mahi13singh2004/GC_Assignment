@@ -15,7 +15,7 @@ const rfqSchema=new mongoose.Schema({
         required:true
     },
     bidCloseTime:{
-        type:String,
+        type:Date,
         required:true
     },
     forcedCloseTime:{
