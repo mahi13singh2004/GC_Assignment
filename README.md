@@ -461,48 +461,5 @@ bidflow/
 └── README.md
 ```
 
-## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👥 Authors
-
-- **Your Name** - Initial work
-
-## 🙏 Acknowledgments
-
-- British Auction mechanics inspired by real-world procurement systems
-- UI/UX design principles from modern SaaS applications
-- MongoDB for flexible document-based storage
-- React and Express communities for excellent documentation
-
-## 📞 Support
-
-For support, email support@bidflow.com or open an issue in the GitHub repository.
-
-## 🔮 Future Enhancements
-
-- [ ] Real-time updates using WebSockets
-- [ ] Email notifications for bid updates
-- [ ] Advanced analytics dashboard
-- [ ] Multi-currency support
-- [ ] Bid comparison tools
-- [ ] Automated auction closing scheduler
-- [ ] Export functionality (PDF/Excel)
-- [ ] Mobile app (React Native)
-- [ ] Multi-language support
-- [ ] Advanced search and filters
-
----
-
-**Built with ❤️ using React, Node.js, and MongoDB**
