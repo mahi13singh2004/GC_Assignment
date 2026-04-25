@@ -4,12 +4,12 @@ import verifyToken from "../middlewares/verifyToken.js";
 
 const router = express.Router();
 
-router.post("/signup",signup);
+router.post("/signup", signup);
 
-router.post("/login",login);
+router.post("/login", login);
 
-router.post("/logout",logout);
+router.post("/logout", logout);
 
-router.get("/checkAuth",verifyToken,checkAuth)
+router.get("/checkAuth", verifyToken, checkAuth)
 
 export default router;

@@ -5,16 +5,16 @@ import authRoutes from "./routes/auth.route.js"
 import rfqRoutes from "./routes/rfq.route.js"
 import cookieParser from "cookie-parser"
 
-const app=express()
+const app = express()
 dotenv.config()
 app.use(express.json())
 app.use(cookieParser())
-const PORT=process.env.PORT || 5000
+const PORT = process.env.PORT || 5000
 
-app.use("/api/auth",authRoutes)
-app.use("/api/rfq",rfqRoutes)
+app.use("/api/auth", authRoutes)
+app.use("/api/rfq", rfqRoutes)
 
-app.listen(PORT,()=>{
+app.listen(PORT, () => {
     connectDB()
     console.log(`Server is running on ${PORT}`)
 })
