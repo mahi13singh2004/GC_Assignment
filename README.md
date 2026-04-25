@@ -347,23 +347,6 @@ Timeline:
 ...continues until no bids in trigger window or forced close time reached
 ```
 
-## 📸 Screenshots
-
-### Login Page
-Clean authentication interface with logo display
-
-### Dashboard
-View all active, upcoming, and closed auctions with status indicators
-
-### Create RFQ
-Intuitive form with quick-fill buttons for dates and times
-
-### RFQ Details
-Comprehensive view showing bids, rankings, and activity timeline
-
-### Place Bid Modal
-Simple bid submission interface for suppliers
-
 ## 🚢 Deployment
 
 ### Frontend (Vercel/Netlify)
